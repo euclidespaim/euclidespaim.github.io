@@ -90,6 +90,42 @@ body {
     align-items: center;
 }
 
+/* LOGO GRAPHIC STYLES & ANIMATIONS */
+.logo-graphic {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.outer-hex {
+    transform-origin: 50px 50px;
+    animation: rotate-reverse 20s infinite linear;
+}
+
+.inner-circle {
+    transform-origin: 50px 50px;
+    animation: rotate-forward 10s infinite linear;
+}
+
+@keyframes rotate-forward {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
 .glitch-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 46px;
@@ -99,6 +135,54 @@ body {
     position: relative;
     color: #fff;
     margin-bottom: 6px;
+}
+
+/* Cyberpunk Glitch Effect */
+.glitch-title::before,
+.glitch-title::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+}
+
+.glitch-title::before {
+    left: 2px;
+    text-shadow: -2px 0 var(--neon-cyan);
+    clip-path: inset(40% 0 61% 0);
+    animation: glitch-anim 6s infinite linear alternate-reverse;
+}
+
+.glitch-title::after {
+    left: -2px;
+    text-shadow: -2px 0 var(--neon-pink), 0 2px var(--neon-purple);
+    clip-path: inset(25% 0 58% 0);
+    animation: glitch-anim2 4s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+    0% { clip-path: inset(40% 0 61% 0); }
+    15% { clip-path: inset(92% 0 1% 0); }
+    30% { clip-path: inset(25% 0 58% 0); }
+    45% { clip-path: inset(76% 0 5% 0); }
+    60% { clip-path: inset(15% 0 80% 0); }
+    75% { clip-path: inset(80% 0 5% 0); }
+    90% { clip-path: inset(5% 0 92% 0); }
+    100% { clip-path: inset(40% 0 61% 0); }
+}
+
+@keyframes glitch-anim2 {
+    0% { clip-path: inset(25% 0 58% 0); }
+    15% { clip-path: inset(80% 0 5% 0); }
+    30% { clip-path: inset(40% 0 61% 0); }
+    45% { clip-path: inset(15% 0 80% 0); }
+    60% { clip-path: inset(92% 0 1% 0); }
+    75% { clip-path: inset(76% 0 5% 0); }
+    90% { clip-path: inset(61% 0 25% 0); }
+    100% { clip-path: inset(25% 0 58% 0); }
 }
 
 .studio-tagline {
