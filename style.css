@@ -12,6 +12,7 @@
     --neon-cyan: #00f0ff;
     --neon-purple: #bd00ff;
     --neon-green: #39ff14;
+    --neon-yellow: #f7df1e;
     
     --text-primary: #ffffff;
     --text-secondary: #8b82be;
@@ -330,6 +331,12 @@ body {
     background: rgba(57, 255, 20, 0.02);
 }
 
+.feature-tag.tag-yellow {
+    color: var(--neon-yellow);
+    border-color: rgba(247, 223, 30, 0.2);
+    background: rgba(247, 223, 30, 0.02);
+}
+
 .game-actions {
     margin-top: 10px;
 }
@@ -362,6 +369,16 @@ body {
 
 .btn-playstore.btn-testing:hover {
     box-shadow: 0 6px 25px rgba(57, 255, 20, 0.6);
+}
+
+.btn-playstore.btn-js {
+    background: linear-gradient(135deg, #b8a614, var(--neon-yellow));
+    box-shadow: 0 4px 15px rgba(247, 223, 30, 0.3);
+    color: var(--bg-color);
+}
+
+.btn-playstore.btn-js:hover {
+    box-shadow: 0 6px 25px rgba(247, 223, 30, 0.6);
 }
 
 /* ABOUT SECTION */

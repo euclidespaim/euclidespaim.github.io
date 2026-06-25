@@ -138,52 +138,9 @@
             </div>
 
             <div class="game-card">
-                <!-- SVG Game Illustration for PyQuest -->
+                <!-- Image Game Illustration for PyQuest -->
                 <div class="game-image-container">
-                    <svg class="game-image-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Background dark console -->
-                        <rect width="400" height="250" fill="#040308" />
-                        <!-- Subtle terminal grid -->
-                        <g opacity="0.1">
-                            <line x1="0" y1="25" x2="400" y2="25" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="50" x2="400" y2="50" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="75" x2="400" y2="75" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="100" x2="400" y2="100" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="125" x2="400" y2="125" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="150" x2="400" y2="150" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="175" x2="400" y2="175" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="200" x2="400" y2="200" stroke="#39ff14" stroke-width="1"/>
-                            <line x1="0" y1="225" x2="400" y2="225" stroke="#39ff14" stroke-width="1"/>
-                        </g>
-                        
-                        <!-- Terminal Window Header -->
-                        <rect x="15" y="15" width="370" height="220" rx="8" fill="none" stroke="#221e3b" stroke-width="2" />
-                        <rect x="15" y="15" width="370" height="30" rx="8" fill="#120e25" />
-                        <!-- Dots (Window Controls) -->
-                        <circle cx="35" cy="30" r="5" fill="#ff5f56" />
-                        <circle cx="50" cy="30" r="5" fill="#ffbd2e" />
-                        <circle cx="65" cy="30" r="5" fill="#27c93f" />
-                        <text x="360" y="34" fill="#a097d4" font-family="'Share Tech Mono', monospace" font-size="11" text-anchor="end">pyquest_terminal.py</text>
-                        
-                        <!-- Code Lines inside terminal -->
-                        <g font-family="'Share Tech Mono', monospace" font-size="11">
-                            <text x="35" y="75" fill="#00f0ff" font-weight="bold">&gt;&gt;&gt; def learn_python(student):</text>
-                            <text x="35" y="95" fill="#ff007f">      if interest == "high":</text>
-                            <text x="35" y="115" fill="#39ff14">          student.level_up()</text>
-                            <text x="35" y="135" fill="#ffea00">          return "Mestre Pythonist"</text>
-                            <text x="35" y="160" fill="#a097d4" opacity="0.7"># Mentor 'Professor Cobra' ativo</text>
-                        </g>
-
-                        <!-- Glowing Green Cobra/Snake Graphic -->
-                        <g filter="drop-shadow(0px 0px 8px #39ff14)">
-                            <path d="M 280 180 C 280 120, 340 120, 340 100 C 340 80, 310 80, 310 100 C 310 110, 320 120, 300 130 C 280 140, 270 160, 260 180 C 250 200, 260 220, 290 220 C 320 220, 340 200, 340 180" 
-                                  fill="none" stroke="#39ff14" stroke-width="4.5" stroke-linecap="round"/>
-                            <circle cx="328" cy="95" r="2" fill="#040308" />
-                        </g>
-                        
-                        <!-- Status text -->
-                        <text x="35" y="215" fill="#39ff14" font-family="'Orbitron', sans-serif" font-size="11" font-weight="bold" filter="drop-shadow(0px 0px 4px #39ff14)">STATUS: EM TESTE</text>
-                    </svg>
+                    <img src="pyquest-logo.png" alt="PyQuest 2.0 Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 30px; box-sizing: border-box; filter: drop-shadow(0 0 20px rgba(57, 255, 20, 0.15));" />
                 </div>
 
                 <div class="game-info">
@@ -207,6 +164,37 @@
                     <div class="game-actions">
                         <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.pyquest" target="_blank" rel="noopener" class="btn-playstore btn-testing">
                             <span>▶ Ver na Google Play (Acesso Antecipado)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <!-- Image Game Illustration for Async Runner -->
+                <div class="game-image-container">
+                    <img src="async-runner-logo.png" alt="Async Runner Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; box-sizing: border-box; filter: drop-shadow(0 0 20px rgba(247, 223, 30, 0.2));" />
+                </div>
+
+                <div class="game-info">
+                    <div class="game-header">
+                        <h3 class="game-name">Async Runner</h3>
+                        <span class="game-platform status-testing" style="color: var(--neon-yellow); text-shadow: 0 0 8px rgba(247, 223, 30, 0.4);">Em Desenvolvimento (Lançamento em Breve)</span>
+                    </div>
+
+                    <p class="game-desc">
+                        Um app educacional focado no estudo prático de JavaScript. Com uma abordagem lúdica e missões interativas, você dominará desde os conceitos básicos até o desenvolvimento de aplicações web dinâmicas.
+                    </p>
+
+                    <div class="game-features">
+                        <span class="feature-tag tag-yellow">Aprenda JS Jogando</span>
+                        <span class="feature-tag tag-yellow">Missões Práticas</span>
+                        <span class="feature-tag tag-yellow">DOM &amp; Lógica</span>
+                        <span class="feature-tag tag-yellow">Interativo</span>
+                    </div>
+
+                    <div class="game-actions">
+                        <a href="#" class="btn-playstore btn-js">
+                            <span>▶ Em Breve</span>
                         </a>
                     </div>
                 </div>
