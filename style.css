@@ -127,6 +127,37 @@ body {
     to { transform: rotate(0deg); }
 }
 
+/* CENTRAL 'CK' — Chakra Petch + glitch sync */
+.logo-ck {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+}
+
+.ck-ghost-cyan { animation: ck-flick 4s steps(1) infinite; }
+.ck-ghost-pink { animation: ck-flick2 5s steps(1) infinite; }
+
+@keyframes ck-flick {
+    0%, 92%, 100% { opacity: 0; }
+    93%, 97% { opacity: 0.9; }
+}
+
+@keyframes ck-flick2 {
+    0%, 88%, 100% { opacity: 0; }
+    89%, 95% { opacity: 0.85; }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .outer-hex,
+    .inner-circle,
+    .glitch-title::before,
+    .glitch-title::after,
+    .ck-ghost-cyan,
+    .ck-ghost-pink {
+        animation: none;
+    }
+}
+
 .glitch-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 46px;
