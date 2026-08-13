@@ -5,24 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberKid Studios - Experiências Lo-Fi &amp; Cyberpunk</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Estúdio independente de jogos e aplicativos mobile com estética retrô-cyberpunk. Conheça Smart Reps, Neon Blocks, PyQuest e Async Runner, disponíveis para Android.">
+    <link rel="canonical" href="https://euclidespaim.github.io/">
+    <meta name="theme-color" content="#030206">
+
+    <!-- Open Graph / compartilhamento social -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CyberKid Studios">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://euclidespaim.github.io/">
+    <meta property="og:title" content="CyberKid Studios - Experiências Lo-Fi &amp; Cyberpunk">
+    <meta property="og:description" content="Estúdio independente de jogos e aplicativos mobile com estética retrô-cyberpunk. Conheça nossos apps para Android.">
+    <meta property="og:image" content="https://euclidespaim.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Logo da CyberKid Studios com as iniciais CK em neon">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CyberKid Studios - Experiências Lo-Fi &amp; Cyberpunk">
+    <meta name="twitter:description" content="Estúdio independente de jogos e aplicativos mobile com estética retrô-cyberpunk.">
+    <meta name="twitter:image" content="https://euclidespaim.github.io/og-image.png">
+
     <!-- Google Fonts for Retro/Cyberpunk Aesthetics -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Chakra+Petch:wght@700&family=Share+Tech+Mono&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Chakra+Petch:wght@700&family=Share+Tech+Mono&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CyberKid Studios",
+      "url": "https://euclidespaim.github.io/",
+      "logo": "https://euclidespaim.github.io/og-image.png",
+      "description": "Estúdio independente de jogos e aplicativos mobile com estética retrô-cyberpunk.",
+      "email": "contact.cyberkidstudios@gmail.com",
+      "foundingLocation": "Brasil"
+    }
+    </script>
 </head>
 <body>
     <!-- CRT Scanlines for retro vibe -->
-    <div class="scanlines"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <a href="#portfolio" class="skip-link">Pular para os projetos</a>
 
     <div class="site-wrapper">
         <!-- HERO / HEADER -->
-        <section class="hero">
+        <header class="hero">
             <div class="studio-logo">
                 <!-- Graphical animated SVG logo -->
                 <div class="logo-graphic">
-                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="logo-svg" role="img" aria-label="Logo da CyberKid Studios">
+                        <title>CyberKid Studios</title>
                         <defs>
                             <filter id="logo-glow-pink" x="-20%" y="-20%" width="140%" height="140%">
                                 <feGaussianBlur stdDeviation="2.5" result="blur" />
@@ -44,10 +84,10 @@
                         <!-- Inner Cyan Tech Circle -->
                         <circle cx="50" cy="50" r="32" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="10 6 4 6" class="inner-circle" filter="url(#logo-glow-cyan)" />
                         <!-- Central Tech Initials 'CK' (Chakra Petch + glitch sync) -->
-                        <g class="ck-ghost-cyan"><text x="48" y="63" text-anchor="middle" fill="#00f0ff" font-family="'Chakra Petch', sans-serif" font-size="34" class="logo-ck">CK</text></g>
-                        <g class="ck-ghost-pink"><text x="52" y="64" text-anchor="middle" fill="#ff007f" font-family="'Chakra Petch', sans-serif" font-size="34" class="logo-ck">CK</text></g>
-                        <text x="42.5" y="63" text-anchor="middle" fill="#00f0ff" font-family="'Chakra Petch', sans-serif" font-size="34" class="logo-ck" filter="url(#logo-glow-cyan)">C</text>
-                        <text x="59" y="63" text-anchor="middle" fill="#ff007f" font-family="'Chakra Petch', sans-serif" font-size="34" class="logo-ck" filter="url(#logo-glow-pink)">K</text>
+                        <g class="ck-ghost-cyan"><text x="48" y="63" text-anchor="middle" fill="#00f0ff" font-size="34" class="logo-ck">CK</text></g>
+                        <g class="ck-ghost-pink"><text x="52" y="64" text-anchor="middle" fill="#ff007f" font-size="34" class="logo-ck">CK</text></g>
+                        <text x="42.5" y="63" text-anchor="middle" fill="#00f0ff" font-size="34" class="logo-ck" filter="url(#logo-glow-cyan)">C</text>
+                        <text x="59" y="63" text-anchor="middle" fill="#ff007f" font-size="34" class="logo-ck" filter="url(#logo-glow-pink)">K</text>
                         <!-- Tech Crosshairs -->
                         <line x1="50" y1="0" x2="50" y2="10" stroke="#00f0ff" stroke-width="1.2" />
                         <line x1="50" y1="90" x2="50" y2="100" stroke="#00f0ff" stroke-width="1.2" />
@@ -59,216 +99,216 @@
             <p class="hero-description">
                 Desenvolvemos aplicativos utilitários e jogos mobile focados em experiências interativas de alta imersão, usabilidade tátil fluida e identidades visuais marcantes inspiradas nas estéticas retrô e cyberpunk.
             </p>
-        </section>
-
-        <!-- GAMES PORTFOLIO -->
-        <section class="portfolio">
-            <h2 class="portfolio-title">Nossos Jogos</h2>
-
-            <div class="game-card">
-                <!-- SVG Game Illustration acting as a high-fidelity preview -->
-                <div class="game-image-container">
-                    <svg class="game-image-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Background matrix grid -->
-                        <rect width="400" height="250" fill="#040308" />
-                        <g opacity="0.15">
-                            <line x1="0" y1="50" x2="400" y2="50" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="0" y1="100" x2="400" y2="100" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="0" y1="150" x2="400" y2="150" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="0" y1="200" x2="400" y2="200" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="80" y1="0" x2="80" y2="250" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="160" y1="0" x2="160" y2="250" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="240" y1="0" x2="240" y2="250" stroke="#00f0ff" stroke-width="1"/>
-                            <line x1="320" y1="0" x2="320" y2="250" stroke="#00f0ff" stroke-width="1"/>
-                        </g>
-                        
-                        <!-- Glowing Neon Game Blocks -->
-                        <!-- Pink Block -->
-                        <g filter="drop-shadow(0px 0px 8px #ff007f)">
-                            <rect x="50" y="80" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
-                            <rect x="95" y="80" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
-                            <rect x="50" y="125" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
-                            <rect x="95" y="125" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
-                        </g>
-
-                        <!-- Cyan Block -->
-                        <g filter="drop-shadow(0px 0px 8px #00f0ff)">
-                            <rect x="220" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
-                            <rect x="265" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
-                            <rect x="310" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
-                        </g>
-
-                        <!-- Purple Block -->
-                        <g filter="drop-shadow(0px 0px 8px #bd00ff)">
-                            <rect x="180" y="150" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
-                            <rect x="225" y="150" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
-                            <rect x="225" y="105" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
-                        </g>
-                        
-                        <!-- Game HUD Overlay text mock -->
-                        <text x="380" y="30" fill="#00f0ff" font-family="'Orbitron', sans-serif" font-size="12" font-weight="bold" text-anchor="end" filter="drop-shadow(0px 0px 4px #00f0ff)">₵ 7.968</text>
-                        <text x="380" y="230" fill="#ff007f" font-family="'Share Tech Mono', monospace" font-size="9" text-anchor="end">SYSTEM v1.0.2</text>
-                    </svg>
-                </div>
-
-                <div class="game-info">
-                    <div class="game-header">
-                        <h3 class="game-name">Neon Blocks: Lo-Fi Grid</h3>
-                        <span class="game-platform">Disponível para Android (Google Play Store)</span>
-                    </div>
-
-                    <p class="game-desc">
-                        Um puzzle relaxante e altamente tátil de encaixar blocos em uma grade cyberpunk. Elimine linhas e colunas enquanto ouve trilhas sonoras geradas em tempo real com harmonia relaxante.
-                    </p>
-
-                    <div class="game-features">
-                        <span class="feature-tag">Sem Formatos Z e S</span>
-                        <span class="feature-tag">Áudio Sintetizado Dinâmico</span>
-                        <span class="feature-tag">Feedback Visual Inteligente</span>
-                        <span class="feature-tag">Mecânica de Defragmentação</span>
-                        <span class="feature-tag">Efeito Screen Shake</span>
-                    </div>
-
-                    <div class="game-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.neonblocks&pcampaignid=web_share" target="_blank" rel="noopener" class="btn-playstore">
-                            <span>▶ Baixar na Google Play</span>
-                        </a>
-                        <a href="https://euclidespaim.github.io/neon-blocks/index.html" target="_blank" class="feature-tag" style="margin-left: 10px; display: inline-block; vertical-align: middle;">Política de Privacidade</a>
-                    </div>
-                </div>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn btn-primary">Ver nossos projetos</a>
+                <a href="#sobre" class="btn btn-ghost">Sobre o estúdio</a>
             </div>
+        </header>
 
-            <div class="game-card">
-                <!-- Image Game Illustration for PyQuest -->
-                <div class="game-image-container">
-                    <img src="pyquest-logo.png" alt="PyQuest 2.0 Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 30px; box-sizing: border-box; filter: drop-shadow(0 0 20px rgba(57, 255, 20, 0.15));" />
-                </div>
+        <main>
+            <!-- PORTFOLIO -->
+            <section class="portfolio" id="portfolio" aria-labelledby="portfolio-title">
+                <h2 class="portfolio-title" id="portfolio-title">Nossos Projetos</h2>
 
-                <div class="game-info">
-                    <div class="game-header">
-                        <h3 class="game-name">PyQuest 2.0</h3>
-                        <span class="game-platform" style="color: #39ff14;">Disponível para Android (Google Play Store)</span>
+                <!-- SMART REPS (destaque) -->
+                <article class="game-card game-card--featured" data-app="smartreps">
+                    <div class="game-image-container">
+                        <img src="smart-reps-logo.webp" alt="Logo do aplicativo Smart Reps"
+                             width="512" height="512" fetchpriority="high" class="game-logo" />
                     </div>
 
-                    <p class="game-desc">
-                        Uma aventura de aprendizado interativa e gamificada para dominar os segredos da linguagem Python. Supere 15 fases sequenciais com desafios práticos de codificação, quizzes e um interpretador offline inteligente integrado.
-                    </p>
+                    <div class="game-info">
+                        <div class="game-header">
+                            <span class="game-badge">Novidade</span>
+                            <h3 class="game-name">Smart Reps</h3>
+                            <span class="game-platform">Acesso Antecipado (Testes Abertos)</span>
+                        </div>
 
-                    <div class="game-features">
-                        <span class="feature-tag tag-green">Aprenda Python Jogando</span>
-                        <span class="feature-tag tag-green">Interpretador Offline</span>
-                        <span class="feature-tag tag-green">Mentor Virtual Integrado</span>
-                        <span class="feature-tag tag-green">Trilha de 15 Níveis</span>
-                        <span class="feature-tag tag-green">Conquistas & Ranks</span>
+                        <p class="game-desc">
+                            Um app de treinos completo projetado para maximizar a sua performance. Acompanha um companion app dedicado para Wear OS que monitora suas séries, repetições e intervalos diretamente do seu pulso.
+                        </p>
+
+                        <ul class="game-features">
+                            <li class="feature-tag">App Wear OS</li>
+                            <li class="feature-tag">Monitoramento de Treinos</li>
+                            <li class="feature-tag">Integração</li>
+                        </ul>
+
+                        <div class="game-actions">
+                            <a href="https://play.google.com/apps/testing/com.cyberkidstudios.smartreps" target="_blank" rel="noopener" class="btn btn-store">
+                                ▶ Participar do Acesso Antecipado
+                            </a>
+                            <a href="https://euclidespaim.github.io/smart-reps/index.html" target="_blank" rel="noopener" class="link-privacy">
+                                Política de Privacidade
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- NEON BLOCKS -->
+                <article class="game-card" data-app="neonblocks">
+                    <!-- SVG Game Illustration acting as a high-fidelity preview -->
+                    <div class="game-image-container">
+                        <svg class="game-image-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prévia do jogo Neon Blocks: blocos neon em uma grade cyberpunk">
+                            <title>Prévia do jogo Neon Blocks</title>
+                            <!-- Background matrix grid -->
+                            <rect width="400" height="250" fill="#040308" />
+                            <g opacity="0.15">
+                                <line x1="0" y1="50" x2="400" y2="50" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="0" y1="100" x2="400" y2="100" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="0" y1="150" x2="400" y2="150" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="0" y1="200" x2="400" y2="200" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="80" y1="0" x2="80" y2="250" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="160" y1="0" x2="160" y2="250" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="240" y1="0" x2="240" y2="250" stroke="#00f0ff" stroke-width="1"/>
+                                <line x1="320" y1="0" x2="320" y2="250" stroke="#00f0ff" stroke-width="1"/>
+                            </g>
+
+                            <!-- Glowing Neon Game Blocks -->
+                            <g filter="drop-shadow(0px 0px 8px #ff007f)">
+                                <rect x="50" y="80" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
+                                <rect x="95" y="80" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
+                                <rect x="50" y="125" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
+                                <rect x="95" y="125" width="40" height="40" rx="4" fill="none" stroke="#ff007f" stroke-width="3"/>
+                            </g>
+
+                            <g filter="drop-shadow(0px 0px 8px #00f0ff)">
+                                <rect x="220" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
+                                <rect x="265" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
+                                <rect x="310" y="35" width="40" height="40" rx="4" fill="none" stroke="#00f0ff" stroke-width="3"/>
+                            </g>
+
+                            <g filter="drop-shadow(0px 0px 8px #bd00ff)">
+                                <rect x="180" y="150" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
+                                <rect x="225" y="150" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
+                                <rect x="225" y="105" width="40" height="40" rx="4" fill="none" stroke="#bd00ff" stroke-width="3"/>
+                            </g>
+
+                            <!-- Game HUD Overlay text mock -->
+                            <text x="380" y="30" fill="#00f0ff" font-family="'Orbitron', sans-serif" font-size="12" font-weight="bold" text-anchor="end" filter="drop-shadow(0px 0px 4px #00f0ff)">₵ 7.968</text>
+                            <text x="380" y="230" fill="#ff007f" font-family="'Share Tech Mono', monospace" font-size="9" text-anchor="end">SYSTEM v1.0.2</text>
+                        </svg>
                     </div>
 
-                    <div class="game-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.pyquest&hl=en-US" target="_blank" rel="noopener" class="btn-playstore btn-testing">
-                            <span>▶ Baixar na Google Play</span>
-                        </a>
-                        <a href="https://euclidespaim.github.io/pyquest2.0/" target="_blank" class="feature-tag tag-green" style="margin-left: 10px; display: inline-block; vertical-align: middle;">Política de Privacidade</a>
+                    <div class="game-info">
+                        <div class="game-header">
+                            <h3 class="game-name">Neon Blocks: Lo-Fi Grid</h3>
+                            <span class="game-platform">Disponível para Android (Google Play Store)</span>
+                        </div>
+
+                        <p class="game-desc">
+                            Um puzzle relaxante e altamente tátil de encaixar blocos em uma grade cyberpunk. Elimine linhas e colunas enquanto ouve trilhas sonoras geradas em tempo real com harmonia relaxante.
+                        </p>
+
+                        <ul class="game-features">
+                            <li class="feature-tag">Sem Formatos Z e S</li>
+                            <li class="feature-tag">Áudio Sintetizado Dinâmico</li>
+                            <li class="feature-tag">Feedback Visual Inteligente</li>
+                            <li class="feature-tag">Mecânica de Defragmentação</li>
+                            <li class="feature-tag">Efeito Screen Shake</li>
+                        </ul>
+
+                        <div class="game-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.neonblocks&amp;pcampaignid=web_share" target="_blank" rel="noopener" class="btn btn-store">
+                                ▶ Baixar na Google Play
+                            </a>
+                            <a href="https://euclidespaim.github.io/neon-blocks/index.html" target="_blank" rel="noopener" class="link-privacy">
+                                Política de Privacidade
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="game-card">
-                <!-- Image Game Illustration for Async Runner -->
-                <div class="game-image-container">
-                    <img src="async-runner-logo.png" alt="Async Runner Logo" style="width: 100%; height: 100%; object-fit: contain; padding: 20px; box-sizing: border-box; filter: drop-shadow(0 0 20px rgba(247, 223, 30, 0.2));" />
-                </div>
-
-                <div class="game-info">
-                    <div class="game-header">
-                        <h3 class="game-name">Async Runner</h3>
-                        <span class="game-platform" style="color: var(--neon-yellow); text-shadow: 0 0 8px rgba(247, 223, 30, 0.4);">Disponível para Android (Google Play Store)</span>
-                    </div>
-
-                    <p class="game-desc">
-                        Um app educacional focado no estudo prático de JavaScript. Com uma abordagem lúdica e missões interativas, você dominará desde os conceitos básicos até o desenvolvimento de aplicações web dinâmicas.
-                    </p>
-
-                    <div class="game-features">
-                        <span class="feature-tag tag-yellow">Aprenda JS Jogando</span>
-                        <span class="feature-tag tag-yellow">Missões Práticas</span>
-                        <span class="feature-tag tag-yellow">DOM &amp; Lógica</span>
-                        <span class="feature-tag tag-yellow">Interativo</span>
-                    </div>
-
-                    <div class="game-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.asyncrunner" target="_blank" rel="noopener" class="btn-playstore btn-js">
-                            <span>▶ Baixar na Google Play</span>
-                        </a>
-                        <a href="https://euclidespaim.github.io/async-runner/" target="_blank" class="feature-tag tag-yellow" style="margin-left: 10px; display: inline-block; vertical-align: middle;">Política de Privacidade</a>
-                    </div>
-                </div>
-            </div>
-            <div class="game-card">
-                <div class="game-image-container">
-                    <svg class="game-image-svg" viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="400" height="250" fill="#040308" />
-                        <g opacity="0.1">
-                            <line x1="0" y1="50" x2="400" y2="50" stroke="#ff8c00" stroke-width="1"/>
-                            <line x1="0" y1="100" x2="400" y2="100" stroke="#ff8c00" stroke-width="1"/>
-                            <line x1="0" y1="150" x2="400" y2="150" stroke="#ff8c00" stroke-width="1"/>
-                            <line x1="0" y1="200" x2="400" y2="200" stroke="#ff8c00" stroke-width="1"/>
-                        </g>
-                        <!-- Dumbbell Graphic -->
-                        <g filter="drop-shadow(0px 0px 8px #ff8c00)" transform="translate(140, 95)">
-                            <rect x="0" y="20" width="20" height="60" rx="4" fill="none" stroke="#ff8c00" stroke-width="4"/>
-                            <rect x="30" y="10" width="20" height="80" rx="4" fill="none" stroke="#ff8c00" stroke-width="4"/>
-                            <rect x="50" y="45" width="40" height="10" fill="#ff8c00"/>
-                            <rect x="90" y="10" width="20" height="80" rx="4" fill="none" stroke="#ff8c00" stroke-width="4"/>
-                            <rect x="120" y="20" width="20" height="60" rx="4" fill="none" stroke="#ff8c00" stroke-width="4"/>
-                        </g>
-                        <!-- Smartwatch UI -->
-                        <g filter="drop-shadow(0px 0px 8px #00f0ff)" transform="translate(300, 30)">
-                            <circle cx="40" cy="40" r="30" fill="none" stroke="#00f0ff" stroke-width="3" />
-                            <text x="40" y="45" fill="#00f0ff" font-family="'Orbitron', sans-serif" font-size="14" font-weight="bold" text-anchor="middle">12</text>
-                            <text x="40" y="60" fill="#00f0ff" font-family="'Share Tech Mono', monospace" font-size="8" text-anchor="middle">REPS</text>
-                        </g>
-                        <text x="35" y="215" fill="#ff8c00" font-family="'Orbitron', sans-serif" font-size="11" font-weight="bold" filter="drop-shadow(0px 0px 4px #ff8c00)">STATUS: EM DESENVOLVIMENTO</text>
-                    </svg>
-                </div>
-
-                <div class="game-info">
-                    <div class="game-header">
-                        <h3 class="game-name">Smart Reps</h3>
-                        <span class="game-platform status-testing" style="color: #ff8c00; text-shadow: 0 0 8px rgba(255, 140, 0, 0.4);">Em Desenvolvimento</span>
+                <!-- PYQUEST -->
+                <article class="game-card" data-app="pyquest">
+                    <div class="game-image-container">
+                        <img src="pyquest-logo.webp" alt="Logo do aplicativo PyQuest 2.0"
+                             width="512" height="512" loading="lazy" class="game-logo" />
                     </div>
 
-                    <p class="game-desc">
-                        Um app de treinos completo projetado para maximizar a sua performance. Acompanha um companion app dedicado para Wear OS que monitora suas séries, repetições e intervalos diretamente do seu pulso.
-                    </p>
+                    <div class="game-info">
+                        <div class="game-header">
+                            <h3 class="game-name">PyQuest 2.0</h3>
+                            <span class="game-platform">Disponível para Android (Google Play Store)</span>
+                        </div>
 
-                    <div class="game-features">
-                        <span class="feature-tag" style="color: #ff8c00; border-color: rgba(255,140,0,0.2); background: rgba(255,140,0,0.02);">App Wear OS</span>
-                        <span class="feature-tag" style="color: #ff8c00; border-color: rgba(255,140,0,0.2); background: rgba(255,140,0,0.02);">Monitoramento de Treinos</span>
-                        <span class="feature-tag" style="color: #ff8c00; border-color: rgba(255,140,0,0.2); background: rgba(255,140,0,0.02);">Integração</span>
+                        <p class="game-desc">
+                            Uma aventura de aprendizado interativa e gamificada para dominar os segredos da linguagem Python. Supere 15 fases sequenciais com desafios práticos de codificação, quizzes e um interpretador offline inteligente integrado.
+                        </p>
+
+                        <ul class="game-features">
+                            <li class="feature-tag">Aprenda Python Jogando</li>
+                            <li class="feature-tag">Interpretador Offline</li>
+                            <li class="feature-tag">Mentor Virtual Integrado</li>
+                            <li class="feature-tag">Trilha de 15 Níveis</li>
+                            <li class="feature-tag">Conquistas &amp; Ranks</li>
+                        </ul>
+
+                        <div class="game-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.pyquest&amp;hl=en-US" target="_blank" rel="noopener" class="btn btn-store">
+                                ▶ Baixar na Google Play
+                            </a>
+                            <a href="https://euclidespaim.github.io/pyquest2.0/" target="_blank" rel="noopener" class="link-privacy">
+                                Política de Privacidade
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ASYNC RUNNER -->
+                <article class="game-card" data-app="asyncrunner">
+                    <div class="game-image-container">
+                        <img src="async-runner-logo.webp" alt="Logo do aplicativo Async Runner"
+                             width="512" height="512" loading="lazy" class="game-logo" />
                     </div>
 
-                    <div class="game-actions">
-                        <a href="#" class="btn-playstore" style="background: linear-gradient(135deg, #cc7000, #ff8c00); box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3);">
-                            <span>▶ Em Breve</span>
-                        </a>
-                        <a href="https://euclidespaim.github.io/smart-reps/index.html" target="_blank" class="feature-tag" style="color: #ff8c00; border-color: rgba(255,140,0,0.2); background: rgba(255,140,0,0.02); margin-left: 10px; display: inline-block; vertical-align: middle;">Política de Privacidade</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="game-info">
+                        <div class="game-header">
+                            <h3 class="game-name">Async Runner</h3>
+                            <span class="game-platform">Disponível para Android (Google Play Store)</span>
+                        </div>
 
-        <!-- ABOUT STUDIO -->
-        <section class="about">
-            <h2 class="portfolio-title">Sobre o Estúdio</h2>
-            <p class="about-text">
-                A CyberKid Studios nasceu com o objetivo de reimaginar puzzles clássicos em experiências de alta imersão sensorial e estética retro-cyberpunk. Hoje, estamos ampliando ativamente os nossos projetos e horizontes de atuação. Como desenvolvedores independentes, colocamos muito orgulho e empenho em construir nossos aplicativos de forma 100% autônoma.
-            </p>
-            <p class="about-text">
-                Para que isso seja possível, contamos com uma equipe de testes incrivelmente competente e dedicada, que nos ajuda a refinar a experiência do usuário e garantir o mais alto nível de qualidade e estabilidade em cada lançamento.
-            </p>
-            <p class="about-text">
-                Nossos projetos utilizam a tecnologia Capacitor para garantir máxima fluidez e compatibilidade em plataformas móveis nativas e wearables.
-            </p>
-        </section>
+                        <p class="game-desc">
+                            Um app educacional focado no estudo prático de JavaScript. Com uma abordagem lúdica e missões interativas, você dominará desde os conceitos básicos até o desenvolvimento de aplicações web dinâmicas.
+                        </p>
+
+                        <ul class="game-features">
+                            <li class="feature-tag">Aprenda JS Jogando</li>
+                            <li class="feature-tag">Missões Práticas</li>
+                            <li class="feature-tag">DOM &amp; Lógica</li>
+                            <li class="feature-tag">Interativo</li>
+                        </ul>
+
+                        <div class="game-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.cyberkidstudios.asyncrunner" target="_blank" rel="noopener" class="btn btn-store">
+                                ▶ Baixar na Google Play
+                            </a>
+                            <a href="https://euclidespaim.github.io/async-runner/" target="_blank" rel="noopener" class="link-privacy">
+                                Política de Privacidade
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- ABOUT STUDIO -->
+            <section class="about" id="sobre" aria-labelledby="about-title">
+                <h2 class="portfolio-title" id="about-title">Sobre o Estúdio</h2>
+                <p class="about-text">
+                    A CyberKid Studios nasceu com o objetivo de reimaginar puzzles clássicos em experiências de alta imersão sensorial e estética retro-cyberpunk. Hoje, estamos ampliando ativamente os nossos projetos e horizontes de atuação. Como desenvolvedores independentes, colocamos muito orgulho e empenho em construir nossos aplicativos de forma 100% autônoma.
+                </p>
+                <p class="about-text">
+                    Para que isso seja possível, contamos com uma equipe de testes incrivelmente competente e dedicada, que nos ajuda a refinar a experiência do usuário e garantir o mais alto nível de qualidade e estabilidade em cada lançamento.
+                </p>
+                <p class="about-text">
+                    Nossos projetos utilizam a tecnologia Capacitor para garantir máxima fluidez e compatibilidade em plataformas móveis nativas e wearables.
+                </p>
+                <p class="about-note">
+                    <strong>Quer se tornar um testador?</strong> Junte-se ao nosso grupo de bug hunters e ajude a moldar os próximos lançamentos:
+                    <a href="https://groups.google.com/g/bughunters-squad" target="_blank" rel="noopener">groups.google.com/g/bughunters-squad</a>
+                </p>
+            </section>
+        </main>
 
         <!-- FOOTER -->
         <footer>
