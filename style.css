@@ -15,6 +15,7 @@
     --neon-green: #39ff14;
     --neon-yellow: #f7df1e;
     --neon-orange: #ff8c00;
+    --neon-sky: #7cc8ff;      /* Brisa: o azul das ondas do ícone */
 
     --text-primary: #ffffff;
     --text-secondary: #8b82be;
@@ -359,6 +360,18 @@ main {
     box-shadow: 0 8px 28px color-mix(in srgb, var(--accent) 60%, transparent);
 }
 
+/* App ainda não publicado: mesmo formato do botão de loja, mas é aviso, não link */
+.btn-soon {
+    color: var(--accent);
+    border: 1px dashed color-mix(in srgb, var(--accent) 60%, transparent);
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+    cursor: default;
+}
+
+.btn-soon:hover {
+    transform: none;
+}
+
 /* ==========================================================================
    PORTFÓLIO
    ========================================================================== */
@@ -394,6 +407,7 @@ main {
 [data-app="neonblocks"]  { --accent: var(--neon-pink); }
 [data-app="pyquest"]     { --accent: var(--neon-green); }
 [data-app="asyncrunner"] { --accent: var(--neon-yellow); }
+[data-app="brisa"]       { --accent: var(--neon-sky); }
 
 .game-card {
     background: var(--panel-bg);
